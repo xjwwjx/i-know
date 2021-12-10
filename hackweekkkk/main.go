@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	logandresgister.Logandregister()
+	logandresgister.LogAndRegister()
 }
