@@ -9,7 +9,7 @@ var db *sql.DB
 func initDB()(err error){
 	//数据库信息
 	//"用户名:密码@tcp(ip:端口)/数据库名字"
-	dsn := "root:xjw2003XJW2021@tcp(localhost:3306)/mdb"
+	dsn := "root:****@tcp(localhost:3306)/mdb"
 	//连接数据库
 	db,err=sql.Open("mysql",dsn)//不会检验用户名和密码是否正确
 	if err != nil{//dsn格式不正确的时候会报错
