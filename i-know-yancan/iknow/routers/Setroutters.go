@@ -18,6 +18,7 @@ func Init() {
 }
 
 func CollectRoute(r *gin.Engine) *gin.Engine {
+	r.Use(middleware.Cors())
 	r.POST("register", contorller.Register)
 	r.POST("login", contorller.Login)
 	r.POST("del_id",middleware.AuthAdmin(),contorller.DelId)
